@@ -10,6 +10,7 @@ This repo will have all you need to start a front end application. It has no fun
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [ESLint](https://eslint.org/)
+- [SCSS](http://sass-lang.com/)
 - [Jest](https://facebook.github.io/jest/) for unit testing
 - [Docker](https://www.docker.com/)
 
