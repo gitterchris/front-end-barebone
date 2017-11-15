@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -11,7 +12,7 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     contentBase: dist,
-    compress: true,
+    hot: true,
     port: 3000
   },
   output: {
@@ -20,6 +21,8 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin([ 'dist' ]),
-    new HtmlWebpackPlugin({ title: 'My Barebone Front End App' })
+    new HtmlWebpackPlugin({ title: 'My Barebone Front End App' }),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
