@@ -15,6 +15,14 @@ module.exports = {
     hot: true,
     port: 3000
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
+    ]
+  },
   output: {
     filename: '[name].bundle.js',
     path: dist
