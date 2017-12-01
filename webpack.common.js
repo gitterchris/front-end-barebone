@@ -1,19 +1,27 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-
-const dist = path.join(__dirname, "dist");
 
 module.exports = {
   entry: {
     app: './src/index.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/transform-runtime']
+          }
+        }
+      }
+    ]
+  },
   plugins: [
     new CleanWebpackPlugin([ 'dist' ]),
     new HtmlWebpackPlugin({ title: 'My Barebone Front End App' }),
   ],
-  output: {
-    filename: '[name].bundle.js',
-    path: dist
-  },
 };
