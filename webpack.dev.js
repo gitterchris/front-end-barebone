@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common');
 const webpack = require('webpack');
 
-const dist = path.join(__dirname, "dist");
+const dist = path.join(__dirname, 'dist');
 
 module.exports = merge(common, {
   devtool: 'source-map',
@@ -23,5 +23,9 @@ module.exports = merge(common, {
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-  ]
+  ],
+  output: {
+    filename: '[name].[hash].js',
+    path: dist
+  },
 });
