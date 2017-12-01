@@ -1,6 +1,4 @@
 import { join } from 'lodash';
-import './styles.css';
-
 
 let el = dummyComponent();
 document.body.appendChild(el);

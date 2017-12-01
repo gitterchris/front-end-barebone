@@ -4,8 +4,8 @@
   "description": "Barebone front end application",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev-server": "webpack-dev-server --open",
+    "build": "webpack --config webpack.prod.js",
+    "dev-server": "webpack-dev-server --open --config webpack.dev.js",
     "test": "npm test"
   },
   "repository": {
