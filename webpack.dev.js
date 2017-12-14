@@ -25,7 +25,7 @@ module.exports = merge(common, {
     new webpack.HotModuleReplacementPlugin(),
   ],
   output: {
-    filename: '[name].[hash].js',
+    filename: '[name].js',
     path: dist
   },
 });
