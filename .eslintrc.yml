@@ -1,0 +1,11 @@
+extends: airbnb
+
+rules:
+  no-use-before-define: off
+  no-plusplus: off
+  array-bracket-spacing:
+    - error
+    - always
+
+globals:
+  document: true

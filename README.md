@@ -6,13 +6,13 @@ Sometimes, I need to start developing a new application with the same set of tec
 
 This repo will have all you need to start a front end application. It has no functionality, except for the index page but it has the necessary tools and setup to get started. This repo utilizes the following technologies:
 
-- [React](https://reactjs.org/)
-- [Webpack](https://webpack.js.org/)
-- [Babel](https://babeljs.io/)
-- [ESLint](https://eslint.org/)
-- [SCSS](http://sass-lang.com/)
-- [Jest](https://facebook.github.io/jest/) for unit testing
-- [Docker](https://www.docker.com/)
+- [ ] [React](https://reactjs.org/)
+- [x] [Webpack](https://webpack.js.org/)
+- [x] [Babel](https://babeljs.io/)
+- [x] [ESLint](https://eslint.org/)
+- [ ] [SCSS](http://sass-lang.com/)
+- [ ] [Jest](https://facebook.github.io/jest/) for unit testing
+- [ ] [Docker](https://www.docker.com/)
 
 ## Getting Started
 
